@@ -61,6 +61,7 @@ body {
   font-size: 1rem;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   cursor: pointer;
+  padding: 0;
 }
 
 .header-menu-item {
@@ -113,7 +114,6 @@ body {
 
 .main-content {
   width: 100%;
-  
   object-fit: cover;
   background-repeat: no-repeat;
   background: #6398CC;
@@ -124,6 +124,7 @@ body {
 .foodservice-header-icon {
   margin-bottom: 3rem;
   margin-top: 3rem;
+  width: 100%;
 }
 
 .software-title {
@@ -136,20 +137,12 @@ body {
   padding-bottom: 1.5rem;
 }
 
-.catertrax-benefits {
-  margin: 7rem 25rem 0 25rem;
-}
-
 .benefits-wrapper {
   display: flex;
   justify-content: space-around;
   align-items: center;
   padding: 1rem;
   margin-top: 5rem;
-}
-
-.left-benefits-container {
-  width: 50%;
 }
 
 .benefits-title {
@@ -171,7 +164,7 @@ body {
 }
 
 .catertrax-screens {
-  width: 500px;
+  width: 80%; 
 }
 
 .customer-support-chat {
@@ -202,7 +195,7 @@ body {
   right: 0;
   bottom: 0;
   width: 50%;
-  height: 70%;
+  height: 65%;
   margin: auto;
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.5);
   color: whitesmoke;
@@ -248,6 +241,35 @@ body {
   align-items: center;
 }
 
+a {
+  color: whitesmoke;
+}
+
+@media (max-width: 700px) {
+  body {
+    margin-top: 230px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .header ul {
+    margin-bottom: 2rem;
+  }
+
+  .cater-logo {
+    width: 70%;
+  }
+
+  .catertrax-benefits {
+    width: 100%;
+  }
+
+  .benefits-wrapper {
+    flex-direction: column;
+  }
+}
 a {
   color: whitesmoke;
 }
