@@ -195,7 +195,7 @@ body {
   right: 0;
   bottom: 0;
   width: 50%;
-  height: 65%;
+  height: auto;
   margin: auto;
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.5);
   color: whitesmoke;
@@ -247,15 +247,18 @@ a {
 
 @media (max-width: 700px) {
   body {
-    margin-top: 230px;
+    margin-top: 0;
   }
 
   .header {
     flex-direction: column;
+    position: static;
   }
 
   .header ul {
     margin-bottom: 2rem;
+    flex-direction: column;
+    text-align: center;
   }
 
   .cater-logo {
@@ -269,7 +272,8 @@ a {
   .benefits-wrapper {
     flex-direction: column;
   }
-}
-a {
-  color: whitesmoke;
+
+  .welcome-module {
+    font-size: .6rem;
+  }
 }
