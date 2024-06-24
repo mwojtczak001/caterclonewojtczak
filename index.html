@@ -15,19 +15,44 @@
   
   <body>
     <header class="header">
-      <img src="images/CaterTrax-Web-Logo-2.webp" alt="Catertrax logo">
+      <img class="cater-logo" src="images/CaterTrax-Web-Logo-2.webp" alt="Catertrax logo">
       <div class="center-header">
-        <ul>
-          <li class="header-menu-item">WHAT WE DO</li>
+        <ul class="nav-header-container">
+          <li class="header-menu-item">
+            WHAT WE DO
+            <ul class="dropdown-menu">
+              <li>Products</li>
+              <li>Services</li>
+            </ul>
+          </li>
           <li class="header-menu-item">WHO WE SERVE</li>
-          <li class="header-menu-item">WHY CATERTRAX</li>
-          <li class="header-menu-item">GET TO KNOW US</li>
+          <li class="header-menu-item">
+            WHY CATERTRAX
+            <ul class="dropdown-menu">
+              <li>Impact</li>
+              <li>Testimonials</li>
+            </ul>
+          </li>
+          <li class="header-menu-item">
+            GET TO KNOW US
+            <ul class="dropdown-menu">
+              <li>Our Story</li>
+              <li>Meet the Team</li>
+              <li>Join our Team</li>
+              <li>Press Mentions</li>
+              <li>Contact Us</li>
+            </ul>
+          </li>
           <li class="header-menu-item">BLOG</li>
         </ul>
       </div>
       <div class="right-header">
-        <input class="search-bar" type="search-bar" placeholder="Search">
-        <i class="fa-solid fa-magnifying-glass"></i>
+        <div class="search-bar-container">
+          <input class="search-bar" type="text" placeholder="Search" aria-label="search">
+          <button class="submit-search-btn">
+            <i class="fa-solid fa-magnifying-glass" aria-lable="submit-search"></i>
+          </button>
+        </div>
         <button class="book-a-demo-btn">
           BOOK A DEMO
         </button>
@@ -78,21 +103,23 @@
       </div>
       <div class="welcome-module">
         <div class="close-module">X</div>
-        <h2>Hello welcome to the site!</h2>
+        <h2>Hello welcome to the site!</h3>
         <h4>My name is Mike Wojtczak and I've applied for the Client Support Specialist Role.  <span class="span-block">I've recreated your website (some the same, some different) to display where I'm at with my HTML, CSS, and Javascript.</span>I'd love to be considered for the position!  I also have a great customer service background.</h4>
         <h4>Here are some site features:</h4>
         <ul class="module-list">
           <li>Chat box that pops up an alert</li>
-          <li>Search icon expands search bar but with no animations/transition</li>
+          <li>Menu dropdowns</li>
           <li>Copyright privacy link goes to your actual privacy URL - copyright year set via javascript</li>
           <li>Hover effects for mouseover on header menu items</li>
           <li>Designed with widescreen desktop in mind.  Limitied responsiveness.  Singular media query for max-width 700px</li>
         </ul>
       </div>
+  
       <footer class="footer">
         <div class="copyright-text">Copyright © <span class="current-year"></span>, CaterTrax Inc. All Rights Reserved. <a target="_blank" href="https://catertrax.com/privacy-policy/">Privacy Policy</a></div>
       </footer>
     </main>
     <script src="index.js"></script>
   </body>
+</html>
 </html>
