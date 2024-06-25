@@ -7,6 +7,7 @@ const supportChat = document.querySelector('.customer-support-chat')
 const welcomeModule = document.querySelector('.welcome-module')
 const closeModuleButton = document.querySelector('.close-module')
 const currentYearEl = document.querySelector('.current-year')
+const caterLogo = document.querySelector('.cater-logo')
 
 const leftBenefitsContainer = document.querySelector('.left-benefits-container')
 let benefitsHtml = ''
@@ -21,6 +22,14 @@ benefitsArr.forEach((benefit) => {
       </div>
     </div>
   `
+})
+
+bookADemoBtn.addEventListener('click', () => {
+  location.href = 'bookdemo.html'
+})
+
+caterLogo.addEventListener('click', () => {
+  location.href = 'index.html'
 })
 
 leftBenefitsContainer.innerHTML = benefitsHtml
