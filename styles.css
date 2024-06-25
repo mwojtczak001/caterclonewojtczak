@@ -12,12 +12,16 @@ h5 {
 }
 
 body {
-  margin-top: 90px;
+  margin-top: 88px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 
 .span-block {
   display: block;
+}
+
+.inline {
+  display: inline;
 }
 
 .italics {
@@ -92,11 +96,18 @@ body {
   padding: 10px 15px;
   z-index: 1;
   background: #FFF;
+  font-size: .75rem;
+  width: 100%;
 }
 
 .dropdown-menu li {
+  text-align: center;
   padding: 1rem;
   border-bottom: 1px solid gray;
+}
+
+.dropdown-menu li:last-child {
+  border-bottom: none;
 }
 
 .dropdown-menu li:hover {
@@ -152,7 +163,7 @@ body {
   color: whitesmoke;
   font-weight: 800;
   cursor: pointer;
-  margin-left: 3rem;
+  margin-left: 1rem;
   border-radius: 20px;
   transition: opacity 0.3s;
 }
@@ -262,7 +273,7 @@ body {
 }
 
 .welcome-module h2 {
-  font-size: 3rem;
+  font-size: 1.5rem;
 }
 
 .welcome-module h4 {
@@ -283,6 +294,114 @@ body {
 
 .module-list {
   color: whitesmoke;
+}
+
+.footer-links-container {
+  background: #24394c;
+  height: 300px; 
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4rem; 
+  color: whitesmoke;
+}
+
+.footer-logo {
+  width: 300px;
+  margin: auto;
+}
+
+.footer-sections {
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-sections h2 {
+  margin-bottom: 0;
+  color: whitesmoke;
+  font-size: 1rem;
+}
+
+.footer-sections ul {
+  padding: 0;
+}
+
+.footer-sections li {
+  list-style-type: none;
+  cursor: pointer;
+  color: whitesmoke;
+  font-size: .9rem;
+  margin-top: .25rem;
+  margin-bottom: .25rem;
+}
+
+.who-we-serve {
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.footer-sections p {
+  font-size: .8rem;
+}
+
+.footer-social-logo {
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.trust-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.trust-icon {
+  margin-right: .75rem;
+}
+
+.website-status-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.status-color-image {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  margin-right: .5rem;
+}
+
+.site-status-description {
+  color: whitesmoke;
+}
+
+.business-address {
+  display: inline-block;
+}
+
+.location-section {
+  display: flex;
+}
+
+.fa-mobile,
+.fa-laptop,
+.fa-location-dot {
+  margin-right: 1rem;
+  margin-bottom: .5rem;
+  margin-top: .5rem;
+}
+
+.fa-laptop {
+  margin-left: -3px;
+}
+
+.support {
+  font-weight: bold;
+  cursor: pointer;
 }
 
 .footer {
@@ -314,6 +433,10 @@ a {
     margin-bottom: 2rem;
     flex-direction: column;
     text-align: center;
+  }
+
+  .book-a-demo-btn {
+    display: block;
   }
 
   .dropdown-menu {
