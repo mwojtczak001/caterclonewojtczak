@@ -312,6 +312,20 @@ a {
     text-align: center;
   }
 
+  .dropdown-menu {
+    background: gray;
+    color: whitesmoke;
+  }
+
+  .dropdown-menu li {
+    border-bottom: 1px solid whitesmoke;
+    transition: opacity 0.2s;
+  }
+
+  .dropdown-menu li:hover {
+    opacity: 0.8;
+  }
+
   .cater-logo {
     width: 70%;
   }
