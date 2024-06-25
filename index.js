@@ -1,4 +1,5 @@
-const whatWeDoBtnEl = document.querySelector('.what-we-do-btn')
+import benefitsArr from "./benefits.js"
+
 const bookADemoBtn = document.querySelector('.book-a-demo-btn')
 const searchBarEl = document.querySelector('.search-bar')
 const magnifyingGlassEl = document.querySelector('.fa-magnifying-glass')
@@ -6,6 +7,23 @@ const supportChat = document.querySelector('.customer-support-chat')
 const welcomeModule = document.querySelector('.welcome-module')
 const closeModuleButton = document.querySelector('.close-module')
 const currentYearEl = document.querySelector('.current-year')
+
+const leftBenefitsContainer = document.querySelector('.left-benefits-container')
+let benefitsHtml = ''
+
+benefitsArr.forEach((benefit) => {
+  benefitsHtml += `
+    <div class="benefit-container">
+      <img class="benefit-icon" src="${benefit.benefitImg}">
+      <div>
+        <h2>${benefit.benefitTitle}</h2>
+        <h4>${benefit.benefitDescription}</h4>
+      </div>
+    </div>
+  `
+})
+
+leftBenefitsContainer.innerHTML = benefitsHtml
 
 document.querySelectorAll('.header-menu-item').forEach((menu) => {
   menu.addEventListener('mouseover', () => {
