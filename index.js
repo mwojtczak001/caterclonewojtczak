@@ -11,6 +11,8 @@ const caterLogo = document.querySelector('.cater-logo')
 const statusColorImage = document.querySelector('.status-color-image')
 const siteStatusDescription = document.querySelector('.site-status-description')
 const leftBenefitsContainer = document.querySelector('.left-benefits-container')
+const hamburgerMenu = document.querySelector('.hamburger-menu')
+const navHeaderContainer = document.querySelector('.nav-header-container')
 
 let benefitsHtml = ''
 
@@ -83,5 +85,12 @@ magnifyingGlassEl.addEventListener('mouseover', () => {
 })
 
 supportChat.addEventListener('click', () => alert('Chat support'))
+
+hamburgerMenu.addEventListener('click', () => {
+  hamburgerMenu.style.display = 'none'
+  navHeaderContainer.style.display = 'block'
+})
+
+
 
 
