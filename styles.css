@@ -60,6 +60,13 @@ body {
   cursor: pointer;
 }
 
+.hamburger-menu {
+  display: none;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
 .nav-header-container {
   display: flex;
   gap: 30px;
@@ -230,7 +237,7 @@ body {
 }
 
 .catertrax-screens {
-  width: 80%; 
+  width: 100%;
 }
 
 .customer-support-chat {
@@ -308,6 +315,7 @@ body {
 .footer-logo {
   width: 300px;
   margin: auto;
+  padding: 3rem 0;
 }
 
 .footer-sections {
@@ -433,6 +441,14 @@ a {
     margin-bottom: 2rem;
     flex-direction: column;
     text-align: center;
+  }
+
+  .hamburger-menu {
+    display: block;
+  }
+
+  .nav-header-container {
+    display: none;
   }
 
   .right-header {
