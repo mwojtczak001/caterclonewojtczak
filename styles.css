@@ -231,6 +231,11 @@ body {
   margin-bottom: 2rem;
 }
 
+.catertrax-benefits {
+  width: 80%;
+  margin: auto;
+}
+
 .benefit-icon {
   width: 3rem;
   margin-right: 2rem;
